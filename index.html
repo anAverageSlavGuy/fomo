@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <title>findout.o</title>
+      <link rel='shortcut icon' type='image/x-icon' href='/img/icona.ico' />
+
+      <link rel="preload" as="font" href="font/Montserrat/Montserrat-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+      <link type="text/css" href="css/style.css" rel="stylesheet"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="splash"><img src="img/marchio_w.png" style="height: 2.8vw;margin-left: 0.55vw;"></div>
+      <div class="container-fluid fl">
+        <div class="header row">
+          <div class="logo-cnt col s4 m3 l2">
+            <img class="logo" src="img/marchio_w.png">
+            <span class="logo-word pt24"></span>
+          </div>
+          <!--div class="navbar col s0 m7 l7 offset-s8 offset-m3 offset-l3">
+            <div class="navbar-item pt18 allphoto-link">ALL PHOTOS</div>
+            <div class="navbar-item pt18 start-btn">TEST</div>
+            <div class="navbar-item pt18 about-link">ABOUT FOMO</div>
+            <div class="navbar-item pt18">CONTACTS</div>
+          </div-->
+        </div>
+
+        <div class="main">
+          <img id="poster" class="poster" src="img/expo/homepage.jpg"/>
+
+          <div class="audio-reminder">
+              <img src="img/audioon_w.png"/>
+              <span class="pt18">ACTIVATE AUDIO FOR MORE EXPERIENCE</span>
+          </div>
+
+          <div class="menufin">
+              <span class="pt36 menufin__item--1 allphoto-link">ALL PHOTOS</span>
+              <span class="pt36 menufin__item--2">TEST</span>
+              <span class="pt36 menufin__item--3">ABOUT FOMO</span>
+              <span class="pt36 menufin__item--4"><span class="pt18">OR BACK TO</span> HOMEPAGE</span>
+          </div>
+
+          <div class="home row h100">
+              <div class="col s12 m12 l12">
+                <div class="row h50">
+                  <div class="upper pt48 col s12 m12 l12">FIND THE NAME OF THAT FEELING</div>
+                </div>
+                <div class="row h50">
+                  <div class="lower col s12 m12 l12">
+                    <button class="findout findout-btn pt18 waves-effect waves-light">FIND OUT</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="content row h100">
+              <div class="photo col s12 m12 l12">
+                <img id="photo_0" class="photo_img transparent_img" src="img/expo/opportunity.jpg"/>
+                <img id="photo_1" class="photo_img transparent_img" src="img/expo/observe.jpg"/>
+                <img id="photo_2" class="photo_img transparent_img" src="img/expo/overload.jpg"/>
+                <img id="photo_3" class="photo_img transparent_img" src="img/expo/ocean.jpg"/>
+                <img id="photo_4" class="photo_img transparent_img" src="img/expo/obligation.jpg"/>
+                <img id="photo_5" class="photo_img transparent_img" src="img/expo/oblivion.jpg"/>
+                <img id="photo_6" class="photo_img transparent_img" src="img/expo/oust.jpg"/>
+                <img id="photo_7" class="photo_img transparent_img" src="img/expo/obsession.jpg"/>
+              </div>
+
+              <div class="phrase pt36 col offset-s1 offset-m1 offset-l1 s10 m10 l10">
+                <span id="phrase_0" class="quote transparent_quote">&#8220;I fear others have more <br> rewarding opportunities than me.&#8221;</span>
+                <span id="phrase_1" class="quote transparent_quote">&#8220;I get worried when I observe <br> my friends are having fun without me.&#8221;</span>
+                <span id="phrase_2" class="quote transparent_quote">&#8220;I'm overloaded of anxiety when <br> I don't know what my friends are up to.&#8221;</span>
+                <span id="phrase_3" class="quote transparent_quote">&#8220;If I'm not able to understand <br> my friends in jokes, I feel as I'm lost in an ocean.&#8221;</span>
+                <span id="phrase_4" class="quote transparent_quote">&#8220;Sometimes, I wonder if it's an <br> obligation to spend time knowing what is going on.&#8221;</span>
+                <span id="phrase_5" class="quote transparent_quote">&#8220;When I have good time it is important for me <br> to share the details online to not to fall in oblivion.&#8221;</span>
+                <span id="phrase_6" class="quote transparent_quote">&#8220;When I'm ousted from <br> a planned get-together it bothers me.&#8221;</span>
+                <span id="phrase_7" class="quote transparent_quote">&#8220;When I go on vacation, for me is an <br> obsession to keep tabs on what my friends are doing.&#8221;</span>
+              </div>
+
+              <div class="arrow prev col s0 m2 l2">
+                <img class="arrow-icon-left" src="img/prew_w.png"/>
+                <span class="arrow-word-left change-word"></span>
+              </div>
+              <div class="col s12 m8 l8"></div>
+              <div class="arrow next col s0 m2 l2">
+                <img class="arrow-icon-right" src="img/next_w.png"/>
+                <span class="arrow-word-right change-word"></span>
+              </div>
+          </div>
+
+          <div class="animation row h100">
+              <div class="animation-img col s12 m12 l12">
+                <img id="anim-static" src="img/1.png?1422259157.415">
+                <video id="anim-dynamic2" class="video-animation" src="img/2.mp4?1222259157.415"></video>
+                <video id="anim-dynamic1" class="video-animation" src="img/1.mp4?1222259157.415"></video>
+
+              </div>
+              <div class="col s12 m12 l12">
+                <div class="row h75" style="margin-bottom: 0!important;"></div>
+                <div class="row h25">
+                  <div class="animation-text pt30 col s12 m12 l12">
+                    Fear of missing out (FOMO) is social anxiety resulting from the belief that others <br> can have rewarding experiences, while the person feeling anxiety does not.
+                  </div>
+                  <div class="slide-bottom about-link"><img src="img/prew_w.png"/></div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="allphoto row h100">
+          <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="img/expo/opportunity.jpg" alt="Gallery image 1" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="img/expo/obligation_m.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="img/expo/ocean.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="img/expo/observe.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="img/expo/overload_m.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="img/expo/oust_m.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+            </div>
+        </div>
+
+        <div class="about slide-content row">
+          <div class="vertical-menu">
+            <div class="vertical-active"></div>
+            <div class="vertical-link bounce-about">ABOUT</div>
+            <div class="vertical-dotted"></div>
+            <div class="vertical-link bounce-test">TEST</div>
+          </div>
+
+          <div class="pt36 head">&#8220;Only by knowing the name of a thing can it actually <br>take shape in one's head.&#8221;</div>
+          <div class="pt48 title">ABOUT FOMO</div>
+          <div class="pt18 body"><p>The English acronym FOMO (Fear of Missing Out) was coined in the 90' and then included in the Oxford English Dictionary, which gives the following definition: &#8220;Anxiety that at that moment an event may occur somewhere else interesting or exciting, frequently generated by posts viewed on a social medium &#8221;.<br>
+          The Theory of Self-Determination, formulated by Edward L. Deci and Richard M. Ryan in the 70's and 80's, allows us to understand why FOMO can actually create psychological distress.<br>
+          The theory is based on three innate and universal psychological needs: the need for competence, the need for relationships and the need for autonomy.<br></p>
+          <p style="word-spacing: -1px;"><b>The feeling of kinship or connection with others, therefore, is a legitimate psychological need that influences the psychological health of people</b>, in this theoretical framework, FOMO can be understood as a self-regulating state deriving from the situational perception that, for a long time term, their needs are not met.<br></p>
+          <p><b>FOMO involves the desire, which can become obsessive, to stay constantly updated and to monitor the activities of the people</b> with whom you have an online and offline relationship, thus making Social Networks the origin and "cure" of the problem: The showcase digital leads to incessantly comparing one's life with that of others, generating dissatisfaction thus leading the individual to use social media more to compensate for it.</p>
+          </div>
+
+          <div class="pt48 title">CONSEQUENCES</div>
+          <div class="pt18 body"><p>Although the first letter of the acronym FOMO stands for "Fear", the sensation it generates is closer to anxiety than to fear: The anxiety of being alone, of being alone in front of a world as vast as the Internet, can generate bewilderment.</p>
+          <p>As has already been said, often those who tend to suffer from the Syndrome are because they already have, in their psychological baggage, personal insecurities and dissatisfactions. Obviously, this new condition only worsens the situation and the perception of oneself, thus leading the individual into an infinite cycle between illness and Social Networks.</p>
+          <p style="word-spacing: -1px;">Exclusion Syndrome is not considered a mental illness and does not need to be treated, but it can become so stressful, even pathological, that it can even cause health damage.
+          In addition to all the wasted time people spend on the Internet, "Fear of Missing Out" can also lead to psychological and physical harm, such as:</p>
+          <p><b>
+          - Disturbances in concentration;<br>
+          - Inner restlessness;<br>
+          - Depressive state of mind;<br>
+          - Stress;<br>
+          - Insomnia problems;<br>
+          - Psychosomatic disorders;<br>
+        </b></p></div>
+
+        <div class="pt48 title">METHODS TO REDUCE THE SYNDROME</div>
+        <div class="pt18 body">
+          <p>- <b>Limit the use of social networks</b> through apps, such as Space, which allows you to control the time of use of the apps and limit it;</p>
+          <p>- Accept that <b>you cannot always have everything you want in life</b>, clarify values;</p>
+          <p>- <b>Writing a gratitude diary</b>, this will not only improve mood and satisfaction with life, but also the quality of sleep and lower the level of stress;</p>
+          <p>- <b>Do mindfulness exercises through meditation</b>, focusing on oneself to avoid traveling too much with the mind on issues concerning the past or the future;</p>
+          <p>- <b>Cultivate friendships offline</b>, in real life, otherwise start having a hobby;</p>
+        </div>
+
+        </div>
+
+
+        <div class="test slide-content row">
+          <div class="text-cnt">
+            <div class="pt48 title" style="margin: 0;">FIND OUT IF YOU CAN SUFFER FROM FOMO</div>
+            <div class="pt18 head">(From Fear of Missing Out Scale: FoMOs by Przybylski, Murayama, DeHann, & Gladwell)</div>
+            <div class="pt24 small-body">
+              Below is a collection of statements about your everyday experience.<br>
+              Please answer according to what really reflects your experiences<br>
+              rather than what you think your experiences should be.
+            </div>
+            <button class="findout start-btn pt18 waves-effect waves-light">START</button>
+          </div>
+        </div>
+
+        <div class="survey row">
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">1. I fear others have more rewarding experiences than me.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="one">
+              <div class="switch">
+                <input name="switch" id="1_1" class="one" type="radio" checked="checked"/>
+                <label for="1_1" class="switch__label">1</label>
+                <input name="switch" id="1_2" class="one" type="radio" />
+                <label for="1_2" class="switch__label">2</label>                 
+                <input name="switch" id="1_3" class="one" type="radio" />
+                <label for="1_3" class="switch__label">3</label>                
+                <input name="switch" id="1_4" class="one" type="radio" />
+                <label for="1_4" class="switch__label">4</label>                 
+                <input name="switch" id="1_5" class="one" type="radio" />
+                <label for="1_5" class="switch__label">5</label>    
+                <div id="indicator_1" class="switch__indicator" /></div>
+              </div>
+            </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">2. I fear my friends have more rewarding experiences than me.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="two">
+              <div class="switch">
+                <input name="switch" id="2_1" class="two" type="radio" checked="checked"/>
+                <label for="2_1" class="switch__label">1</label>
+                <input name="switch" id="2_2" class="two" type="radio" />
+                <label for="2_2" class="switch__label">2</label>                 
+                <input name="switch" id="2_3" class="two" type="radio" />
+                <label for="2_3" class="switch__label">3</label>                
+                <input name="switch" id="2_4" class="two" type="radio" />
+                <label for="2_4" class="switch__label">4</label>                 
+                <input name="switch" id="2_5" class="two" type="radio" />
+                <label for="2_5" class="switch__label">5</label>    
+                <div id="indicator_2" class="switch__indicator" /></div>
+              </div>
+            </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">3. I get worried when I find out my friends are having fun without me.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="three">
+              <div class="switch">
+                <input name="switch" id="3_1" class="three" type="radio" checked="checked"/>
+                <label for="3_1" class="switch__label">1</label>
+                <input name="switch" id="3_2" class="three" type="radio" />
+                <label for="3_2" class="switch__label">2</label>                 
+                <input name="switch" id="3_3" class="three" type="radio" />
+                <label for="3_3" class="switch__label">3</label>                
+                <input name="switch" id="3_4" class="three" type="radio" />
+                <label for="3_4" class="switch__label">4</label>                 
+                <input name="switch" id="3_5" class="three" type="radio" />
+                <label for="3_5" class="switch__label">5</label>    
+                <div id="indicator_3" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">4. I get anxious when I don't know what my friends are up to.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="four">
+              <div class="switch">
+                <input name="switch" id="4_1" class="four" type="radio" checked="checked"/>
+                <label for="4_1" class="switch__label">1</label>
+                <input name="switch" id="4_2" class="four" type="radio" />
+                <label for="4_2" class="switch__label">2</label>                 
+                <input name="switch" id="4_3" class="four" type="radio" />
+                <label for="4_3" class="switch__label">3</label>                
+                <input name="switch" id="4_4" class="four" type="radio" />
+                <label for="4_4" class="switch__label">4</label>                 
+                <input name="switch" id="4_5" class="four" type="radio" />
+                <label for="4_5" class="switch__label">5</label>    
+                <div id="indicator_4" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">5. It is important that I understand my friends "in jokes."</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="five">
+              <div class="switch">
+                <input name="switch" id="5_1" type="radio" checked="checked"/>
+                <label for="5_1" class="switch__label">1</label>
+                <input name="switch" id="5_2" type="radio" />
+                <label for="5_2" class="switch__label">2</label>                 
+                <input name="switch" id="5_3" type="radio" />
+                <label for="5_3" class="switch__label">3</label>                
+                <input name="switch" id="5_4" type="radio" />
+                <label for="5_4" class="switch__label">4</label>                 
+                <input name="switch" id="5_5" type="radio" />
+                <label for="5_5" class="switch__label">5</label>    
+                <div id="indicator_5" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">6. Sometimes, I wonder if I spend too much time keeping up with what is going on.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="six">
+              <div class="switch">
+                <input name="switch" id="6_1" type="radio" checked="checked"/>
+                <label for="6_1" class="switch__label">1</label>
+                <input name="switch" id="6_2" type="radio" />
+                <label for="6_2" class="switch__label">2</label>                 
+                <input name="switch" id="6_3" type="radio" />
+                <label for="6_3" class="switch__label">3</label>                
+                <input name="switch" id="6_4" type="radio" />
+                <label for="6_4" class="switch__label">4</label>                 
+                <input name="switch" id="6_5" type="radio" />
+                <label for="6_5" class="switch__label">5</label>    
+                <div id="indicator_6" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">7. It bothers me when I miss an opportunity to meet up with friends.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="seven">
+              <div class="switch">
+                <input name="switch" id="7_1" type="radio" checked="checked"/>
+                <label for="7_1" class="switch__label">1</label>
+                <input name="switch" id="7_1" type="radio" />
+                <label for="7_1" class="switch__label">2</label>                 
+                <input name="switch" id="7_3" type="radio" />
+                <label for="7_3" class="switch__label">3</label>                
+                <input name="switch" id="7_4" type="radio" />
+                <label for="7_4" class="switch__label">4</label>                 
+                <input name="switch" id="7_5" type="radio" />
+                <label for="7_5" class="switch__label">5</label>    
+                <div id="indicator_7" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">8. When I have a good time it is important for me to share the details online.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="eight">
+              <div class="switch">
+                <input name="switch" id="8_1" type="radio" checked="checked"/>
+                <label for="8_1" class="switch__label">1</label>
+                <input name="switch" id="8_2" type="radio" />
+                <label for="8_2" class="switch__label">2</label>                 
+                <input name="switch" id="8_3" type="radio" />
+                <label for="8_3" class="switch__label">3</label>                
+                <input name="switch" id="8_4" type="radio" />
+                <label for="8_4" class="switch__label">4</label>                 
+                <input name="switch" id="8_5" type="radio" />
+                <label for="8_5" class="switch__label">5</label>    
+                <div id="indicator_8" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">9. When I miss out on a planned get-together it bothers me.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="nine">
+              <div class="switch">
+                <input name="switch" id="9_1" type="radio" checked="checked"/>
+                <label for="9_1" class="switch__label">1</label>
+                <input name="switch" id="9_2" type="radio" />
+                <label for="9_2" class="switch__label">2</label>                 
+                <input name="switch" id="9_3" type="radio" />
+                <label for="9_3" class="switch__label">3</label>                
+                <input name="switch" id="9_4" type="radio" />
+                <label for="9_4" class="switch__label">4</label>                 
+                <input name="switch" id="9_5" type="radio" />
+                <label for="9_5" class="switch__label">5</label>    
+                <div id="indicator_9" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <div class="survey-cnt row">
+            <div class="survey-question-title pt24">10. When I go on vacation, I continue to keep tabs on what my friends are doing.</div>
+            <div class="survey-check-cnt pt14"> 
+              <div class="survey-tip pt14">Not at all true of me</div>
+              <form id="ten">
+              <div class="switch">
+                <input name="switch" id="10_1" type="radio" checked="checked"/>
+                <label for="10_1" class="switch__label">1</label>
+                <input name="switch" id="10_2" type="radio" />
+                <label for="10_2" class="switch__label">2</label>                 
+                <input name="switch" id="10_3" type="radio" />
+                <label for="10_3" class="switch__label">3</label>                
+                <input name="switch" id="10_4" type="radio" />
+                <label for="10_4" class="switch__label">4</label>                 
+                <input name="switch" id="10_5" type="radio" />
+                <label for="10_5" class="switch__label">5</label>    
+                <div id="indicator_10" class="switch__indicator" /></div>
+              </div>
+              </form>
+              <div class="survey-tip pt14">Extremely true of me</div>
+            </div>
+          </div>
+
+          <button class="findout survey-result pt18 waves-effect waves-light">FIND OUT</button>
+
+        </div>
+
+        <div class="result slide-content row">
+          <div class="text-cnt">
+            <p id="survey-value" class="pt36 title" style="margin: 0;">37/50</p>
+            <div id="survey-title" class="pt36 title" style="margin: 0;">HIGH PROBABILITY THAT YOU MAY SUFFER FROM FOMO</div>
+            <div id="survey-descr" class="pt24 small-body">
+              The test result notes that there is a high probability that you are suffering<br> 
+              from FOMO. Monitor the symptoms and, if you have the perception that they<br>
+              are getting worse, consider the possibility of a consultation.
+            </div>
+            <div class="pt18 small-body" style="margin-top: 6vw;">SHARE ON IG WITH<br>#INSIDETHECIRCLE</div>
+          </div>
+        </div>
+
+        <audio id="audio" loop src="audio/the-calm.m4a"></audio>
+        <div class="audio-mute"><img src="img/volume_w.png"/></div>
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/script.js"></script>
+      
+    </body>
+  </html>
